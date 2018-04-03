@@ -7,16 +7,29 @@
 //
 
 import UIKit
+import AWSPinpoint
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var pinpoint: AWSPinpoint?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        initializePinpoint(with: launchOptions)
+        showViewController()
         return true
+    }
+    
+    private func initializePinpoint(with launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+        pinpoint = AWSPinpoint(configuration: AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+    }
+    
+    private func showViewController() {
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

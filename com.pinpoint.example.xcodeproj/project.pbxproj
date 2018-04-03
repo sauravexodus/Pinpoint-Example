@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2165D9A220737D6D00FD1720 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 2165D9A120737D6D00FD1720 /* awsconfiguration.json */; };
 		2178182720737A6E00F1BDE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178182620737A6E00F1BDE9 /* AppDelegate.swift */; };
 		2178182920737A6E00F1BDE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178182820737A6E00F1BDE9 /* ViewController.swift */; };
 		2178182C20737A6E00F1BDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178182A20737A6E00F1BDE9 /* Main.storyboard */; };
 		2178182E20737A6E00F1BDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2178182D20737A6E00F1BDE9 /* Assets.xcassets */; };
 		2178183120737A6E00F1BDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2178182F20737A6E00F1BDE9 /* LaunchScreen.storyboard */; };
+		4DC1B6D544C0DEC70BAB508F /* Pods_com_pinpoint_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB700ECD05BFEF56D37BA856 /* Pods_com_pinpoint_example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2165D9A120737D6D00FD1720 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		2178182320737A6E00F1BDE9 /* com.pinpoint.example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.pinpoint.example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2178182620737A6E00F1BDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2178182820737A6E00F1BDE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		2178182D20737A6E00F1BDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2178183020737A6E00F1BDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2178183220737A6E00F1BDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D419A1195A0EF3C6D01B9BAC /* Pods-com.pinpoint.example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.pinpoint.example.release.xcconfig"; path = "Pods/Target Support Files/Pods-com.pinpoint.example/Pods-com.pinpoint.example.release.xcconfig"; sourceTree = "<group>"; };
+		DD4DD9E90B6AAE406AF9D39D /* Pods-com.pinpoint.example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-com.pinpoint.example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-com.pinpoint.example/Pods-com.pinpoint.example.debug.xcconfig"; sourceTree = "<group>"; };
+		FB700ECD05BFEF56D37BA856 /* Pods_com_pinpoint_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_com_pinpoint_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC1B6D544C0DEC70BAB508F /* Pods_com_pinpoint_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				2178182520737A6E00F1BDE9 /* com.pinpoint.example */,
 				2178182420737A6E00F1BDE9 /* Products */,
+				EC8A7E12981DB9FE6B038B4E /* Pods */,
+				26EC88C7CBD83F4E733E5093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		2178182520737A6E00F1BDE9 /* com.pinpoint.example */ = {
 			isa = PBXGroup;
 			children = (
+				2165D9A120737D6D00FD1720 /* awsconfiguration.json */,
 				2178182620737A6E00F1BDE9 /* AppDelegate.swift */,
 				2178182820737A6E00F1BDE9 /* ViewController.swift */,
 				2178182A20737A6E00F1BDE9 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = com.pinpoint.example;
 			sourceTree = "<group>";
 		};
+		26EC88C7CBD83F4E733E5093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB700ECD05BFEF56D37BA856 /* Pods_com_pinpoint_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC8A7E12981DB9FE6B038B4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DD9E90B6AAE406AF9D39D /* Pods-com.pinpoint.example.debug.xcconfig */,
+				D419A1195A0EF3C6D01B9BAC /* Pods-com.pinpoint.example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2178183520737A6E00F1BDE9 /* Build configuration list for PBXNativeTarget "com.pinpoint.example" */;
 			buildPhases = (
+				69253491EF645A150E528C7D /* [CP] Check Pods Manifest.lock */,
 				2178181F20737A6E00F1BDE9 /* Sources */,
 				2178182020737A6E00F1BDE9 /* Frameworks */,
 				2178182120737A6E00F1BDE9 /* Resources */,
+				3541782B8BFCF992C6CEDB39 /* [CP] Embed Pods Frameworks */,
+				AF40B82E0C1CA14DA5CA4BF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -92,7 +122,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = DocTalk;
+				ORGANIZATIONNAME = Exodus;
 				TargetAttributes = {
 					2178182220737A6E00F1BDE9 = {
 						CreatedOnToolsVersion = 9.2;
@@ -123,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2165D9A220737D6D00FD1720 /* awsconfiguration.json in Resources */,
 				2178183120737A6E00F1BDE9 /* LaunchScreen.storyboard in Resources */,
 				2178182E20737A6E00F1BDE9 /* Assets.xcassets in Resources */,
 				2178182C20737A6E00F1BDE9 /* Main.storyboard in Resources */,
@@ -130,6 +161,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3541782B8BFCF992C6CEDB39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-com.pinpoint.example/Pods-com.pinpoint.example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-com.pinpoint.example/Pods-com.pinpoint.example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69253491EF645A150E528C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-com.pinpoint.example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF40B82E0C1CA14DA5CA4BF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-com.pinpoint.example/Pods-com.pinpoint.example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2178181F20737A6E00F1BDE9 /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		2178183620737A6E00F1BDE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4DD9E90B6AAE406AF9D39D /* Pods-com.pinpoint.example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		2178183720737A6E00F1BDE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D419A1195A0EF3C6D01B9BAC /* Pods-com.pinpoint.example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
